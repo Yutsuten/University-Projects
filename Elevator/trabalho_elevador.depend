@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1350602750 source:f:\experimento elevador\trabalho_elevador\main.cpp
+	<stdio.h>
+	<conio.h>
+	"elevador.h"
+
+1181782563 f:\experimento elevador\trabalho_elevador\elevador.h
+	<windows.h>
+
+1181498430 source:f:\experimento elevador\trabalho_elevador\elevador.cpp
+	"elevador.h"
+
