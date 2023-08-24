@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cifra de Rail-fence</title>
+
+    <link href="index.css" charset="utf-8" rel="stylesheet">
+    <script src="index.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Cifra de Rail Fence</h1>
+      <div class="config">
+        <div class="config-1">
+          <h3>O que deseja fazer?</h3>
+          <form>
+            <div class="radioButton" onclick="atualizaElementos(this);">
+              <input type="radio" name="cifra" id="rdCriptografa" value="criptografar" checked> Criptografar
+            </div>
+            <div class="radioButton" onclick="atualizaElementos(this);">
+              <input type="radio" name="cifra" id="rdDescriptografa" value="descriptografar"> Descriptografar
+            </div>
+          </form>
+          <button type="button" name="codificar" id="btCodifica" onclick="railFence();">Criptografe minha mensagem!</button>
+        </div>
+        <div class="config-2">
+          <h3>Selecione uma chave:</h3>
+          <input type="number" name="chave" id="campoChave" value="3" onfocusout="validaChave()" min=2 max=20> (Válido de 2~20)
+        </div>
+      </div>
+
+      <div class="texts">
+        <div class="plainText">
+          <h3>Texto normal</h3>
+          <textarea name="Texto" id="texto">We are being attacked! Run to the hills</textarea>
+        </div>
+        <div class="cipherText">
+          <h3>Texto cifrado</h3>
+          <textarea name="Texto" id="cifra" class="readOnly" readonly></textarea>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
